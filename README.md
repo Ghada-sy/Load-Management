@@ -1,8 +1,8 @@
-## Mobility Load Management 
+# Mobility Load Management 
 Source code for the paper "Mobility Load Management in Cellular Networks: A Deep Reinforcement Learning Approach"
 
-## Installation
-# Installing Prerequisites
+# Installation
+## Installing Prerequisites
 
 1- Install Python3.6. (Do Not use the virtual environment)
 
@@ -14,7 +14,7 @@ Source code for the paper "Mobility Load Management in Cellular Networks: A Deep
 
 5- Install [Stablebaselines](https://github.com/hill-a/stable-baselines).
 
-# Installing the code
+## Installing the code
 
 Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
@@ -58,7 +58,7 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 			       ```$ python3 scratch/RealSce/Agent_TD3.py```
 
 
-## References
+# References
 If you find this code useful for your research, please cite the following paper:
 ```
 @article{Alsuhli2020Mobility,
