@@ -36,10 +36,12 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
   
 7- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
+
 8- To run the Proof of concept scenario
    In the directory:Path_to_NS3_Directoy
        * right-click to open the terminal
        * run the command:
+       
 			 ```
              $ ./script_LTE_POCS.sh 
 			 ```
@@ -53,9 +55,13 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
    In the directory:Path_to_NS3_Directoy
        * right-click to open the terminal
        * run the command:
-             ```$ ./script_LTE_RealSce.sh```  (For the first run, you may need to run $ chmod +x ./script_LTE_RealSce.sh)
+       
+             ```$ ./script_LTE_RealSce.sh```  
+	     (For the first run, you may need to run $ chmod +x ./script_LTE_RealSce.sh)
+	     
        * Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
-			       ```$ python3 scratch/RealSce/Agent_TD3.py```
+       
+	     ```$ python3 scratch/RealSce/Agent_TD3.py```
 
 
 # References
