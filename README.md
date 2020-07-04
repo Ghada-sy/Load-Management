@@ -30,8 +30,8 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
 6- Build ns-3 again by navigating to Path_to_NS3_Directoy and running the commands:
 ```
-		$ ./waf configure -d debug --enable-examples --enable-tests
-		$ ./waf
+$ ./waf configure -d debug --enable-examples --enable-tests
+$ ./waf
 ```
 
   
