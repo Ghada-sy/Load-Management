@@ -38,8 +38,9 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 7- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
 
 8- To run the Proof of concept scenario. In the directory Path_to_NS3_Directoy:
-     - right-click to open the terminal
-     - run the command:
+
+- right-click to open the terminal and run the command:
+     
 ```
 $ ./script_LTE_POCS.sh
 ```
@@ -47,30 +48,26 @@ For the first run, you may need to run
 ```
 $ chmod +x ./script_LTE_POCS.sh
 ```
-     - Open a new tab in the terminal. This tab is used to run the DDQN agent code. 
+- Open a new tab in the terminal. This tab is used to run the DDQN agent code. 
      
 ```
 $ python3 scratch/POCS/ddqn_agent.py
 ```
 
+9- To run the realistic scenario. In the directory Path_to_NS3_Directoy:
 
- 8- To run the realistic scenario.
- 
-   In the directory:Path_to_NS3_Directoy
-   - right-click to open the terminal
-   - run the command:
-   
+- right-click to open the terminal and run the command:
+     
+```
+$ ./script_LTE_RealSce.sh
+```
 
-        ```
-	$ ./script_LTE_RealSce.sh
-	```  
-   (For the first run, you may need to run $ chmod +x ./script_LTE_RealSce.sh)
+- Open a new tab in the terminal. This tab is used to run the DDQN agent code. 
+     
+```
+$ python3 scratch/RealSce/Agent_TD3.py
+```
 
-   - Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
-       
-	```
-	$ python3 scratch/RealSce/Agent_TD3.py
-	```
 
 
 # References
