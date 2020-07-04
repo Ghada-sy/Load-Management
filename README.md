@@ -10,7 +10,7 @@ Source code for the paper "Mobility Load Management in Cellular Networks: A Deep
 
 3- Install [ns3gym](https://github.com/tkn-tub/ns3-gym).
 
-4- Install [Tensorflow version 1.14](https://www.tensorflow.org/install/pip). (Do Not use the virtual environment) and [Keras](https://pypi.org/project/Keras/).
+4- Install [Tensorflow version 1.14](https://www.tensorflow.org/install/pip) and [Keras](https://pypi.org/project/Keras/). (Do Not use the virtual environment, use pip3) 
 
 5- Install [Stablebaselines](https://github.com/hill-a/stable-baselines).
 
@@ -37,29 +37,28 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
   
 7- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
 
-8- To run the Proof of concept scenario.
-
-   In the directory:Path_to_NS3_Directoy
-     * right-click to open the terminal
-     * run the command:
-        ```  
-	$ ./script_LTE_POCS.sh
-	```
-	(For the first run, you may need to run ```$ chmod +x ./script_LTE_POCS.sh```)
-	This will make the simulator ready for calls from python code.
-
-
-   * Open a new tab in the terminal. This tab is used to run the DDQN agent code. 
-	```
-	$ python3 scratch/POCS/ddqn_agent.py
-	```
+8- To run the Proof of concept scenario. In the directory Path_to_NS3_Directoy:
+     - right-click to open the terminal
+     - run the command:
+```
+$ ./script_LTE_POCS.sh
+```
+For the first run, you may need to run
+```
+$ chmod +x ./script_LTE_POCS.sh
+```
+     - Open a new tab in the terminal. This tab is used to run the DDQN agent code. 
+     
+```
+$ python3 scratch/POCS/ddqn_agent.py
+```
 
 
  8- To run the realistic scenario.
  
    In the directory:Path_to_NS3_Directoy
-   * right-click to open the terminal
-   * run the command:
+   - right-click to open the terminal
+   - run the command:
    
 
         ```
@@ -67,7 +66,7 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 	```  
    (For the first run, you may need to run $ chmod +x ./script_LTE_RealSce.sh)
 
-   * Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
+   - Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
        
 	```
 	$ python3 scratch/RealSce/Agent_TD3.py
