@@ -18,9 +18,9 @@ Source code for the paper "Mobility Load Management in Cellular Networks: A Deep
 
 Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
-1- copy POCS and RealSce folders to Path_to_NS3_Directory/scratch/.
+1- Copy POCS and RealSce folders to Path_to_NS3_Directory/scratch/.
 
-2- copy cell-individual-offset.h and cell-individual-offset.cc to Path_to_NS3_Directoy/src/lte/model/.
+2- Copy cell-individual-offset.h and cell-individual-offset.cc to Path_to_NS3_Directoy/src/lte/model/.
 
 3- Copy LTE_Attributes.txt, Real_model-attributes.txt, script_LTE_POCS.sh and script_LTE_RealSce.sh to Path_to_NS3_Directoy/.
 
