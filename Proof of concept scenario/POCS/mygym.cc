@@ -270,6 +270,8 @@ namespace ns3 {
         std::map < uint16_t, float > ::iterator ptr;
         int Blocked_Users_num = 0;
         double min_thro = 100;
+	m_UesNum.assign(m_cellCount, 0);
+
         for (itr = UserThrouput.begin(); itr != UserThrouput.end(); itr++) {
 
             float all = 0;
