@@ -4,15 +4,16 @@ Source code for the paper "Mobility Load Management in Cellular Networks: A Deep
 # Installation
 ## Installing Prerequisites
 
-1- Install Python3.6. (Do Not use the virtual environment)
+1- Install Python3.8.10 (Do Not use the virtual environment)
 
 2- Install [ns-3.30](https://www.nsnam.org/wiki/Installation).
 
 3- Install [ns3gym](https://github.com/tkn-tub/ns3-gym).
 
-4- Install [Tensorflow version 1.14](https://www.tensorflow.org/install/pip) and [Keras](https://pypi.org/project/Keras/). (Do Not use the virtual environment, use pip3) 
+4- Install tensorflow 2.8.0 and keras 2.8.0. (Do Not use the virtual environment, use pip3). 
 
-5- Install [Stablebaselines](https://github.com/hill-a/stable-baselines).
+5- Install [Stablebasline3](https://github.com/DLR-RM/stable-baselines3).
+
 
 ## Installing the code
 
