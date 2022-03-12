@@ -1,4 +1,4 @@
-from stable_baselines.common.vec_env import VecEnvWrapper
+from stable_baselines3.common.vec_env import VecEnvWrapper
 import numpy as np
 import time
 from collections import deque
