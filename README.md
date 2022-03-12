@@ -4,7 +4,7 @@ Source code for the paper "Mobility Load Management in Cellular Networks: A Deep
 # Installation
 ## Installing Prerequisites
 
-1- Install Python3.8.10 (Do Not use the virtual environment)
+1- Install Python 3.8.10 (Do Not use the virtual environment)
 
 2- Install [ns-3.30](https://www.nsnam.org/wiki/Installation).
 
