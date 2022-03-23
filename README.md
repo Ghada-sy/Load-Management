@@ -8,11 +8,13 @@ Source code for the paper "Mobility Load Management in Cellular Networks: A Deep
 
 2- Install [ns-3.30](https://www.nsnam.org/wiki/Installation).
 
-3- Install [ns3gym](https://github.com/tkn-tub/ns3-gym).
+3- Download [ns3gym](https://apps.nsnam.org/app/ns3-gym/).
 
-4- Install tensorflow 2.8.0 and keras 2.8.0. (Do Not use the virtual environment, use pip3). 
+4- Follow installation steps: [ns3gym](https://github.com/tkn-tub/ns3-gym).
 
-5- Install [Stablebasline3](https://github.com/DLR-RM/stable-baselines3).
+5- Install tensorflow 2.8.0 and keras 2.8.0. (Do Not use the virtual environment, use pip3). 
+
+6- Install [Stablebasline3](https://github.com/DLR-RM/stable-baselines3).
 
 
 ## Installing the code
@@ -29,16 +31,18 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
 5- Copy and replace wscript with Path_to_NS3_Directoy/src/lte/wscript (Remember to backup the original).
 
-6- Build ns-3 again by navigating to Path_to_NS3_Directoy and running the commands:
+6- Rename ns3gym folder to "opengym" and place it in Path_to_NS3_Directory/src.
+
+7- Build ns-3 again by navigating to Path_to_NS3_Directoy and running the commands:
 ```
 $ ./waf configure -d debug --enable-examples --enable-tests
 $ ./waf
 ```
 
   
-7- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
+8- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
 
-8- To run the Proof of concept scenario. In the directory Path_to_NS3_Directoy:
+9- To run the Proof of concept scenario. In the directory Path_to_NS3_Directoy:
 
 - right-click to open the terminal and run the command:
      
@@ -49,13 +53,21 @@ For the first run, you may need to run
 ```
 $ chmod +x ./script_LTE_POCS.sh
 ```
+
+-To run one episode only run the following command instead:
+
+```
+$ ./waf --run "scratch/POCS/POCS --RunNum=$(($i))"
+```
+
 - Open a new tab in the terminal. This tab is used to run the DDQN agent code. 
      
 ```
-$ python3 scratch/POCS/ddqn_agent.py
+$ cd scratch/POCS
+$ python3 ddqn_agent.py
 ```
 
-9- To run the realistic scenario. In the directory Path_to_NS3_Directoy:
+10- To run the realistic scenario. In the directory Path_to_NS3_Directoy:
 
 - right-click to open the terminal and run the command:
      
@@ -63,10 +75,17 @@ $ python3 scratch/POCS/ddqn_agent.py
 $ ./script_LTE_RealSce.sh
 ```
 
-- Open a new tab in the terminal. This tab is used to run the DDQN agent code. 
+- To run one episode only run the follosing command instead:
      
 ```
-$ python3 scratch/RealSce/Agent_TD3.py
+$ ./waf --run "scratch/Power_CIO/Power_CIO"
+```
+
+- Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
+     
+```
+$ cd scratch/RealSce
+$ python3 Agent_TD3.py
 ```
 
 
