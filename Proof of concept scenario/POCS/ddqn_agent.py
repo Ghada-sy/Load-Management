@@ -6,12 +6,12 @@ import numpy as np
 from collections import deque
 from keras.models import Sequential
 from keras.layers import Dense
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras import backend as K
 
 import tensorflow as tf
 import pdb
-import tensorflow.contrib.slim as slim
+#import tensorflow.contrib.slim as slim
 import matplotlib as mpl                  #for plotting
 import matplotlib.pyplot as plt
 from tensorflow import keras
