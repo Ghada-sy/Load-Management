@@ -5,9 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from stable_baselines3 import TD3
 from stable_baselines3.td3.policies import MlpPolicy
-from stable_baselines3 import results_plotter
+from stable_baselines3.common import results_plotter
 from VecMonitor import VecMonitor
-from stable_baselines3.results_plotter import load_results, ts2xy
+from stable_baselines3.common.results_plotter import load_results, ts2xy
 from stable_baselines3.common.noise import NormalActionNoise, OrnsteinUhlenbeckActionNoise, AdaptiveParamNoiseSpec
 from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
 from stable_baselines3.common.callbacks import BaseCallback
