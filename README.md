@@ -6,11 +6,11 @@ Source code for the paper "Mobility Load Management in Cellular Networks: A Deep
 
 1- Install Python 3.8.10 (Do Not use the virtual environment)
 
-2- Install [ns-3.30](https://www.nsnam.org/wiki/Installation).
+2- Install [ns-3.30](https://www.nsnam.org/wiki/Installation) (Follow prerequisites steps and then manual installation (Do not use bake)).
 
 3- Download [ns3gym](https://apps.nsnam.org/app/ns3-gym/).
 
-4- Follow installation steps: [ns3gym](https://github.com/tkn-tub/ns3-gym).
+4- Follow installation steps: [ns3gym installation](https://github.com/tkn-tub/ns3-gym).
 
 5- Install tensorflow 2.8.0 and keras 2.8.0. (Do Not use the virtual environment, use pip3). 
 
