@@ -28,11 +28,11 @@ In this work, we propose a joint power levels and CIOs optimization using reinfo
 
 Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
-1- Copy POCS and RealSce folders to Path_to_NS3_Directory/scratch/.
+1- Copy POCS, RealSce and Power_CIO folders to Path_to_NS3_Directory/scratch/.
 
 2- Copy cell-individual-offset.h and cell-individual-offset.cc to Path_to_NS3_Directoy/src/lte/model/.
 
-3- Copy LTE_Attributes.txt, Real_model-attributes.txt, script_LTE_POCS.sh and script_LTE_RealSce.sh to Path_to_NS3_Directoy/.
+3- Copy LTE_Attributes.txt, Real_model-attributes.txt, script_LTE_POCS.sh, script_LTE_RealSce.sh and Power_CIO.sh to Path_to_NS3_Directoy/.
 
 4- Copy and replace lte-ue-rrc.cc with Path_to_NS3_Directoy/src/lte/model/lte-ue-rrc.cc (Rememebr to backup the original).
 
