@@ -85,7 +85,7 @@ $ ./script_LTE_RealSce.sh
 - To run one episode only run the follosing command instead:
      
 ```
-$ ./waf --run "scratch/Power_CIO/Power_CIO"
+$ ./waf --run "scratch/RealSce/RealSce --RunNum=$(($i))"
 ```
 
 - Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
@@ -102,7 +102,7 @@ In the directory Path_to_NS3_Directoy:
 - right-click to open the terminal and run the command:
      
 ```
-$ ./script_LTE_RealSce.sh
+$ ./Power_CIO.sh
 ```
 
 - To run one episode only run the follosing command instead:
@@ -114,8 +114,8 @@ $ ./waf --run "scratch/Power_CIO/Power_CIO"
 - Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
      
 ```
-$ cd scratch/RealSce
-$ python3 Agent_TD3.py
+$ cd scratch/Power_CIO
+$ python3 BL_TD3.py
 ```
 
 
