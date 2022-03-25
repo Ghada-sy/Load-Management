@@ -1,5 +1,11 @@
 # Mobility Load Management 
-Source code for the paper "Mobility Load Management in Cellular Networks: A Deep Reinforcement Learning Approach"
+We consider the problem of mobility load management (balancing) in cellular LTE networks. In this page we provide the source codes for the following papers:
+1- "Mobility Load Management in Cellular Networks: A Deep Reinforcement Learning Approach":
+We propose a comprehensive deep reinforcement learning (RL) framework for steering the cell individual offset (CIO) of every pair of cells. We consider two scenarios, Proof-of-Concept scenario and Realistic LTE Network Scenario.
+
+2- "Optimized Power and Cell Individual Offset for Cellular Load Balancing via Reinforcement Learning":
+In this work, we propose a joint power levels and CIOs optimization using reinforcement learning (RL).
+
 
 # Installation
 ## Installing Prerequisites
@@ -88,15 +94,47 @@ $ cd scratch/RealSce
 $ python3 Agent_TD3.py
 ```
 
+11- To run the joint power and CIO optimization scenario.
+
+In the directory Path_to_NS3_Directoy:
+
+- right-click to open the terminal and run the command:
+     
+```
+$ ./script_LTE_RealSce.sh
+```
+
+- To run one episode only run the follosing command instead:
+     
+```
+$ ./waf --run "scratch/Power_CIO/Power_CIO"
+```
+
+- Open a new tab in the terminal. This tab is used to run the TD3 agent code. 
+     
+```
+$ cd scratch/RealSce
+$ python3 Agent_TD3.py
+```
+
 
 
 # References
-If you find this code useful for your research, please cite the following paper:
+If you find this code useful for your research, please cite the following papers:
 ```
 @article{Alsuhli2020Mobility,
   title={Mobility Load Management in Cellular Networks: A Deep Reinforcement Learning Approach},
   author={Alsuhli, Ghada and Banawan, Karim and Attiah, Kareem and Elezabi, Ayman and Seddik, Karim and Gaber, Ayman and Zaki, Mohamed and Gadallah, Yasser},
   journal={arXiv preprint XXXXXXXX},
   year={2020}
+}
+
+@inproceedings{alsuhli2021optimized,
+  title={Optimized power and cell individual offset for cellular load balancing via reinforcement learning},
+  author={Alsuhli, Ghada and Banawan, Karim and Seddik, Karim and Elezabi, Ayman},
+  booktitle={2021 IEEE Wireless Communications and Networking Conference (WCNC)},
+  pages={1--7},
+  year={2021},
+  organization={IEEE}
 }
 ```
