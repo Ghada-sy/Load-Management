@@ -38,7 +38,7 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
 4- Copy and replace lte-ue-rrc.cc with Path_to_NS3_Directoy/src/lte/model/lte-ue-rrc.cc (Rememebr to backup the original).
 
-5- Copy and replace lte-enb-phy.cc with Path_to_NS3_Directoy/src/lte/model/lte-enb-rrc.cc (Rememebr to backup the original).
+5- Copy and replace lte-enb-phy.cc with Path_to_NS3_Directoy/src/lte/model/lte-enb-phy.cc (Rememebr to backup the original).
 
 6- Copy and replace wscript with Path_to_NS3_Directoy/src/lte/wscript (Remember to backup the original).
 
