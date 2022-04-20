@@ -38,22 +38,24 @@ Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
 4- Copy and replace lte-ue-rrc.cc with Path_to_NS3_Directoy/src/lte/model/lte-ue-rrc.cc (Rememebr to backup the original).
 
-5- Copy and replace wscript with Path_to_NS3_Directoy/src/lte/wscript (Remember to backup the original).
+5- Copy and replace lte-enb-phy.cc with Path_to_NS3_Directoy/src/lte/model/lte-enb-rrc.cc (Rememebr to backup the original).
 
-6- Rename ns3gym folder to "opengym" and place it in Path_to_NS3_Directory/src.
+6- Copy and replace wscript with Path_to_NS3_Directoy/src/lte/wscript (Remember to backup the original).
 
-7- Build ns-3 again by navigating to Path_to_NS3_Directoy and running the commands:
+7- Rename ns3gym folder to "opengym" and place it in Path_to_NS3_Directory/src.
+
+8- Build ns-3 again by navigating to Path_to_NS3_Directoy and running the commands:
 ```
 $ ./waf configure -d debug --enable-examples --enable-tests
 $ ./waf
 ```
 
   
-8- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
+9- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
 
-9- Place the mobility model files in Path_to_NS3_Directory/scratch.
+10- Place the mobility model files in Path_to_NS3_Directory/scratch.
 
-10- To run the Proof of concept scenario. In the directory Path_to_NS3_Directoy:
+11- To run the Proof of concept scenario. In the directory Path_to_NS3_Directoy:
 
 - right-click to open the terminal and run the command:
      
@@ -78,7 +80,7 @@ $ cd scratch/POCS
 $ python3 ddqn_agent.py
 ```
 
-11- To run the realistic scenario. In the directory Path_to_NS3_Directoy:
+12- To run the realistic scenario. In the directory Path_to_NS3_Directoy:
 
 - right-click to open the terminal and run the command:
      
@@ -99,7 +101,7 @@ $ cd scratch/RealSce
 $ python3 Agent_TD3.py
 ```
 
-12- To run the joint power and CIO optimization scenario.
+13- To run the joint power and CIO optimization scenario.
 
 In the directory Path_to_NS3_Directoy:
 
