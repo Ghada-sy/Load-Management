@@ -16,7 +16,7 @@ In this work, we propose a joint power levels and CIOs optimization using reinfo
 2- Install [ns-3.30](https://www.nsnam.org/wiki/Installation) (Follow prerequisites steps and then manual installation (Do not use bake)).
  Notice that:  1- some of the packages to be installed are deprecated with higher Ubuntu versions
 			         2-(./build.py) is not applicable for versions less than 3.36. skip it and use (Configuration with Waf) commands. 
-			         3- Make sure you run (./waf -enable-tests --enable-examples configure) and (./waf build) before running thetest (./test.py)
+			         3- Make sure you run (./waf -enable-tests --enable-examples configure) and (./waf build) before running the test (./test.py)
 
 3- Download [ns3gym](https://apps.nsnam.org/app/ns3-gym/). For versions less than 3.36 download the package in this [link](https://github.com/tkn-tub/ns3-gym/tree/app)
 
@@ -35,32 +35,34 @@ In this work, we propose a joint power levels and CIOs optimization using reinfo
 
 Note: that ns-3 installtion directory is called Path_to_NS3_Directory.
 
-1- Copy POCS, RealSce and Power_CIO folders to Path_to_NS3_Directory/scratch/.
+1- Copy POCS, RealSce and Power_CIO folders to Path_to_NS3_Directory/scratch/. Try not to use nested folders i.e. avoid: scratch/folder1/folder2/file.cc, instead use scratch/folder1/file.cc. 
 
-2- Copy cell-individual-offset.h and cell-individual-offset.cc to Path_to_NS3_Directoy/src/lte/model/.
+2- Replace the diectory Path_to_NS3_Directory/scr/lte with the directory inside the archived file in lte(1).zip (Rememebr to backup the original)
 
-3- Copy LTE_Attributes.txt, Real_model-attributes.txt, script_LTE_POCS.sh, script_LTE_RealSce.sh and Power_CIO.sh to Path_to_NS3_Directoy/.
+3- Copy cell-individual-offset.h and cell-individual-offset.cc to Path_to_NS3_Directoy/src/lte/model/.
 
-4- Copy and replace lte-ue-rrc.cc with Path_to_NS3_Directoy/src/lte/model/lte-ue-rrc.cc (Rememebr to backup the original).
+4- Copy LTE_Attributes.txt, Real_model-attributes.txt, script_LTE_POCS.sh, script_LTE_RealSce.sh and Power_CIO.sh to Path_to_NS3_Directoy/.
 
-5- Copy and replace lte-enb-phy.cc with Path_to_NS3_Directoy/src/lte/model/lte-enb-phy.cc (Rememebr to backup the original).
+5- Copy and replace lte-ue-rrc.cc with Path_to_NS3_Directoy/src/lte/model/lte-ue-rrc.cc (Rememebr to backup the original).
 
-6- Copy and replace wscript with Path_to_NS3_Directoy/src/lte/wscript (Remember to backup the original).
+6- Copy and replace lte-enb-phy.cc with Path_to_NS3_Directoy/src/lte/model/lte-enb-phy.cc (Rememebr to backup the original).
 
-7- Rename ns3gym folder to "opengym" and place it in Path_to_NS3_Directory/src.
+7- Copy and replace wscript with Path_to_NS3_Directoy/src/lte/wscript (Remember to backup the original).
 
-8- Build ns-3 again by navigating to Path_to_NS3_Directoy and running the commands:
+8- Rename ns3gym folder to "opengym" and place it in Path_to_NS3_Directory/src.
+
+9- Build ns-3 again by navigating to Path_to_NS3_Directoy and running the commands:
 ```
 $ ./waf configure -d debug --enable-examples --enable-tests
 $ ./waf
 ```
-
+Notice that: If the ./waf command resulted in an error, remove the directory Path_to_NS3_Directory/contrib/opengym from this path
   
-9- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
+10- You can configure your own attributes from the (LTE_Attributes.txt, Real_model-attributes.txt)
 
-10- Place the mobility model files in Path_to_NS3_Directory/scratch.
+11- Place the mobility model files in Path_to_NS3_Directory/scratch.
 
-11- To run the Proof of concept scenario. In the directory Path_to_NS3_Directoy:
+12- To run the Proof of concept scenario. In the directory Path_to_NS3_Directoy:
 
 - right-click to open the terminal and run the command:
      
@@ -85,7 +87,7 @@ $ cd scratch/POCS
 $ python3 ddqn_agent.py
 ```
 
-12- To run the realistic scenario. In the directory Path_to_NS3_Directoy:
+13- To run the realistic scenario. In the directory Path_to_NS3_Directoy:
 
 - right-click to open the terminal and run the command:
      
@@ -106,7 +108,7 @@ $ cd scratch/RealSce
 $ python3 Agent_TD3.py
 ```
 
-13- To run the joint power and CIO optimization scenario.
+14- To run the joint power and CIO optimization scenario.
 
 In the directory Path_to_NS3_Directoy:
 
